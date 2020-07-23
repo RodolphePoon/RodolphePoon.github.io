@@ -5,123 +5,85 @@
 		href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAD////EcTAjAAAAZ3RSTlMAAAsxEQVOsXcHCIX26iZe+fRRstUvzrwWGtt5O/DTGAFNxjw1m7uXBlfB8/dC2uaJLhSA4imQajMcJT9aA67vo1I0gf3y0WACKsJET6yqzWTx2NlFLJHdkiBcmsn1/P5bEkxmdHVz9JmIfgAAAAFiS0dEaMts9CIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkBxYPGyOGXtqyAAABFklEQVQoz22PaVeCQBSG56agFFa0qO2KZosW0b4RLViWlZaZmUup2f3//6ABwgLm+TBn5n3O3HteQv4AylAgCMQLAMeHwgL48+ERMTIKDDE2jtIE+Axwk4g4Ne0zEIxSgbG4RwDMzJoC5wYCfplfsMTiEgzyhAAgJGUrRykFTp5ezqykV9fWs5bIbTgisEmfypa6ndqJ7Yqo7Dli3x4RCR0cHh2fnPKcvR20M3TQo+fhi8u41YQeV/gfI399U6AGoHB7h270IhXa/UPmsZRzmxKvkbJOL0+i90+ZPCOTCsmyhURktpBJscKc9EKg+loz3KlRe6uaPaD+3mgqrfYHpd1Smo3PesIqaNJRu72vfv+711U7dvIDj9Z0IgwxllQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDctMjJUMTU6Mjc6MjQrMDA6MDCZxIuuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA3LTIyVDE1OjI3OjI0KzAwOjAw6JkzEgAAAABJRU5ErkJggg==" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="https://rodolphepoon.github.io/" target="_blank">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <header>
-	<nav class="navbar fixed-top navbar-dark bg-dark">
-		<a href="#" class="navbar-brand d-flex align-items-center">
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-				<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-				<circle cx="12" cy="13" r="4"></circle>
-			</svg>
-			<strong>Album</strong>
-		</a>
+	<h1>Hi there <sup>👋</sup> & welcome</h1>
+	<nav>
+		<details>
+			<summary>menu</summary>
+			<a href="#presentation" target="_self">who am i</a><br />
+			<a href="#projects" target="_self">my projects</a><br />
+			<a href="#contact" target="_self">contact</a><br />
+		</details>
 	</nav>
+	<hr>
 </header>
-<main role="main" style="padding-top: 56px;">
-	<section class="jumbotron text-center">
-		<div class="container">
-			<h1 class="jumbotron-heading">Hi there 👋</h1>
-			<p class="lead text-muted"><strong>RodolphePoon/RodolphePoon</strong> is a ✨ <em>special</em>✨ repository
-				because its <code>README.md</code> (this file) appears on your GitHub profile.
+<main>
+	<section id="presentation">
+		<h2>Presentation</h2>
+		<details>
+			<summary><b>Who are you?</b></summary>
+			<p>
+				i am bla bla
 			</p>
-
-			<a href="#" class="btn btn-primary ">Home</a>
-			<a href="https://github.com/RodolphePoon/" class="btn btn-secondary my-2">Github</a>
+		</details>
+		<details>
+			<summary><b>Where a you from?</b> </summary>
+			<p>
+				i am from France
 			</p>
-		</div>
+		</details>
+		<details>
+			<summary><b>How can i contact you?</b></summary>
+			you can contact me by <a href="mailto:poon.rodolphe@hotmail.fr">📧</a>
+		</details>
+		<hr />
 	</section>
+	<section id="projects">
+		<table>
+			<caption>
+				<h2>My projects</h2>
+			</caption>
+			<thead>
+				<th>Project name</th>
+				<th>Project description</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td> <a href="/test">sapper</a></td>
+					<td>test new js framework</td>
+				</tr>
+				<tr>
+					<td> <a href="/tictactoe"> tictactoe</a></td>
+					<td>tic tac toe coco2d</td>
+				</tr>
+				<tr>
+					<td> <a href="/eskimo"> eskimo</a></td>
+					<td>coco2d game</td>
+				</tr>
+				<tr>
+					<td> <a href="https://github.com/RodolphePoon/octorecipe">octorecipe</a><br /></td>
+					<td>
+						<img alt="jian yang" src="https://openpsychometrics.org/tests/characters/test-resources/pics/SV/10.jpg" />
+						<p>
+							- Question for you. What’s better than a octopus recipe?
+							<br />
+							- Answer for you. Eight recipes for octopus.
+							<br />
+							- My grandma gave me this recipe, before she died in a horrible way.
+						</p>
 
-	<div class="album py-5 bg-light">
-		<div class="container">
-
-			<div class="row">
-				<div class="col-md-4">
-					<div class="card mb-4 box-shadow">
-						<img class="card-img-top"
-							data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-							alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
-							src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17378539c29%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17378539c29%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-							data-holder-rendered="true">
-						<div class="card-body">
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-								content. This content is a little bit longer.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a class="btn btn-sm btn-outline-secondary" href="/test"> to test</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4 box-shadow">
-						<img class="card-img-top"
-							data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-							alt="Thumbnail [100%x225]"
-							src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17378539c2a%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17378539c2a%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-							data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-						<div class="card-body">
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-								content. This content is a little bit longer.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="/tictactoe" class="btn btn-sm btn-outline-secondary">to tic tac toe</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4 box-shadow">
-						<img class="card-img-top"
-							data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-							alt="Thumbnail [100%x225]"
-							src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17378539c2b%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17378539c2b%22%3E%3Crect%20width%3D%22288%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.8203125%22%20y%3D%22118.8%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-							data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-						<div class="card-body">
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-								content. This content is a little bit longer.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a class="btn btn-sm btn-outline-secondary" href="/eskimo">to eskimo</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4 box-shadow">
-						<img class="card-img-top img-fluid"
-							data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="jian yang"
-							src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.8asians.com%2Fwp-content%2Fuploads%2F2017%2F05%2FJian-Yang.jpg&f=1&nofb=1"
-							data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-						<div class="card-body">
-							<p class="card-text">- Question for you. What’s better than a octopus recipe?
-								<br />
-								- Answer for you. Eight recipes for octopus.
-								<br />
-								- My grandma gave me this recipe, before she died in a horrible way.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<a class="btn btn-sm btn-outline-secondary"
-									href="https://github.com/RodolphePoon/octorecipe">octorecipe</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
 </main>
-<footer class="text-muted">
-	<div class="container">
-		<p class="float-right">
-			<a href="#">Back to top</a>
-		</p>
-		<p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-		<p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting
-				started guide</a>.</p>
-	</div>
+<footer id="contact">
+	<hr />
+	<address>
+		Written by <a href="mailto:poon.rodolphe@hotmail.fr">Rodolphe Poon</a>.<br>
+		- 2020<br>
+	</address>
+	<a href="#">Back to top</a>
 </footer>
