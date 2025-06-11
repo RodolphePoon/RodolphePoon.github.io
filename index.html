@@ -1,104 +1,268 @@
-<title>Hello</title>
-<meta charset="UTF-8">
-<meta name="author" content="Rodolphe Poon">
-<meta name="description" content="Personnal page">
-<meta name="keywords" content="html,coco2d,sapper,javascript">
-<link rel="icon" type="image/png"
-	href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAD////EcTAjAAAAZ3RSTlMAAAsxEQVOsXcHCIX26iZe+fRRstUvzrwWGtt5O/DTGAFNxjw1m7uXBlfB8/dC2uaJLhSA4imQajMcJT9aA67vo1I0gf3y0WACKsJET6yqzWTx2NlFLJHdkiBcmsn1/P5bEkxmdHVz9JmIfgAAAAFiS0dEaMts9CIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkBxYPGyOGXtqyAAABFklEQVQoz22PaVeCQBSG56agFFa0qO2KZosW0b4RLViWlZaZmUup2f3//6ABwgLm+TBn5n3O3HteQv4AylAgCMQLAMeHwgL48+ERMTIKDDE2jtIE+Axwk4g4Ne0zEIxSgbG4RwDMzJoC5wYCfplfsMTiEgzyhAAgJGUrRykFTp5ezqykV9fWs5bIbTgisEmfypa6ndqJ7Yqo7Dli3x4RCR0cHh2fnPKcvR20M3TQo+fhi8u41YQeV/gfI399U6AGoHB7h270IhXa/UPmsZRzmxKvkbJOL0+i90+ZPCOTCsmyhURktpBJscKc9EKg+loz3KlRe6uaPaD+3mgqrfYHpd1Smo3PesIqaNJRu72vfv+711U7dvIDj9Z0IgwxllQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDctMjJUMTU6Mjc6MjQrMDA6MDCZxIuuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA3LTIyVDE1OjI3OjI0KzAwOjAw6JkzEgAAAABJRU5ErkJggg==" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<base href="https://rodolphepoon.github.io/" target="_blank">
+<!DOCTYPE html>
+<head>
+	<title>Hello</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Rodolphe Poon">
+	<meta name="description" content="Personnal page">
+	<meta name="keywords" content="html,coco2d,sapper,javascript">
+	<link rel="icon" type="image/png"
+		href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAAAgAD////EcTAjAAAAZ3RSTlMAAAsxEQVOsXcHCIX26iZe+fRRstUvzrwWGtt5O/DTGAFNxjw1m7uXBlfB8/dC2uaJLhSA4imQajMcJT9aA67vo1I0gf3y0WACKsJET6yqzWTx2NlFLJHdkiBcmsn1/P5bEkxmdHVz9JmIfgAAAAFiS0dEaMts9CIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkBxYPGyOGXtqyAAABFklEQVQoz22PaVeCQBSG56agFFa0qO2KZosW0b4RLViWlZaZmUup2f3//6ABwgLm+TBn5n3O3HteQv4AylAgCMQLAMeHwgL48+ERMTIKDDE2jtIE+Axwk4g4Ne0zEIxSgbG4RwDMzJoC5wYCfplfsMTiEgzyhAAgJGUrRykFTp5ezqykV9fWs5bIbTgisEmfypa6ndqJ7Yqo7Dli3x4RCR0cHh2fnPKcvR20M3TQo+fhi8u41YQeV/gfI399U6AGoHB7h270IhXa/UPmsZRzmxKvkbJOL0+i90+ZPCOTCsmyhURktpBJscKc9EKg+loz3KlRe6uaPaD+3mgqrfYHpd1Smo3PesIqaNJRu72vfv+711U7dvIDj9Z0IgwxllQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDctMjJUMTU6Mjc6MjQrMDA6MDCZxIuuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA3LTIyVDE1OjI3OjI0KzAwOjAw6JkzEgAAAABJRU5ErkJggg==" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<base href="https://rodolphepoon.github.io/" target="_blank">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<style>
+		body {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+		}
+
+		@keyframes example {
+  from {
+		transform: translateY(-180px);
+		opacity: 0;
+	}
+  to {
+		transform: translateY(0);
+		opacity: 1;
+
+	}
+}
+
+		header {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+			border-bottom: 1px dotted red;
+			animation-timing-function: ease-out;
+			animation-name: example;
+			animation-duration: .5s;
+			position: sticky;
+			top:0;
+		}
+
+		header>a {
+			background-color: blue;
+		}
+
+		header>nav{
+			margin-right: 20px;
+			background-color: rgba(255, 255, 255, .7) ;
+			height: 56px;
+			min-width: 56px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			border-radius:10px;
+		}
+
+	
 
 
-<header>
-	<h1>Hi there <sup>👋</sup> & welcome</h1>
-	<nav>
-		<details>
-			<summary>menu</summary>
-			<a href="#presentation" target="_self">who am i</a><br />
-			<a href="#projects" target="_self">my projects</a><br />
-			<a href="#contact" target="_self">contact</a><br />
-		</details>
-	</nav>
-	<hr>
-</header>
-<main>
-	<section id="presentation">
-		<h2>Presentation</h2>
-		<details>
-			<summary><b>Who are you?</b></summary>
-			i am Rodolphe Poon
-		</details>
-		<details>
-			<summary><b>Where a you from?</b> </summary>
-			🇫🇷
-		</details>
-		<details>
-			<summary><b>How can i contact you?</b></summary>
-			<a href="mailto:poon.rodolphe@hotmail.fr">📧</a>
-		</details>
-		<i>my resume: </i><a href="/CV%20Rodolphe%20POON%202020.pdf" download>🇫🇷</a>
-		<a href="/CV%20Rodolphe%20POON%202020%20Eng.pdf" download>🇬🇧</a>
-		<hr />
-	</section>
-	<section id="projects">
-		<table>
-			<caption>
-				<h2>My projects</h2>
-			</caption>
-			<thead>
-				<th>Project name</th>
-				<th>Project description</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td> <a href="/test">sapper</a></td>
-					<td>test new js framework</td>
-				</tr>
-				<tr>
-					<td> <a href="/sql-viewer">sql viewer</a></td>
-					<td>test vibe coding with mistral AI</td>
-				</tr>
-				<tr>
-					<td> <a href="/tictactoe"> tictactoe</a></td>
-					<td>tic tac toe coco2d</td>
-				</tr>
-				<tr>
-					<td> <a href="/eskimo"> eskimo</a></td>
-					<td>coco2d game</td>
-				</tr>
-				<tr>
-					<td> <a href="https://github.com/RodolphePoon/octorecipe">octorecipe</a><br /></td>
-					<td>
-						<figure>
-							<img alt="Jian Yang" height="56"
-								src="https://openpsychometrics.org/tests/characters/test-resources/pics/SV/10.jpg" />
-							<figcaption>
-								<p>
-									Question for you. What’s better than a octopus recipe?
-									<br />
-									Answer for you. Eight recipes for octopus.
-									<br />
-									My grandma gave me this recipe, before she died in a horrible way.
-									<br />
-									- Jian Yang
-								</p>
-							</figcaption>
-						</figure>
-					</td>
-				</tr>
-				<tr>
-					<td> <a href="/YOOOOOOOOoooooooooooooo.html"> yoo</a></td>
-					<td>yooo</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
-</main>
-<footer id="contact">
+		nav>details>summary {
+			display: block;
+			cursor: pointer;
+			padding: 10px;
+		}
+
+		details[open]>ul{
+			animation-timing-function: ease-out;
+			animation-name: example;
+			animation-duration: .5s;
+		}
+
+		
+		nav>details>ul {
+			position: absolute;
+			right: 0;
+			padding:0;
+			margin:0;
+			background-color: white;
+			border:1px solid black;
+		}
+
+		nav>ul {
+			margin:0px;
+			padding:0 20px;
+			display: none;
+			flex-direction: row;
+		}
+
+		nav ul>li{
+			display: block;
+			padding: 10px;
+		}
+
+		main {
+			background-color: green;
+		}
+
+		@media screen and (min-width: 768px) {
+			header {
+				padding:20px 80px
+			}
+			nav>details {
+				display: none;
+			}
+			nav>ul {
+				display: flex;
+			}
+			main {
+				margin: 0 80px;
+			}
+			footer {
+				padding:20px 80px
+			}
+		}
+
+		@media screen and (min-width: 1280px) {
+			header {
+				padding:20px 120px
+			}
+			nav>details {
+				display: none;
+			}
+			nav>ul {
+				display: flex;
+			}
+
+			main {
+				margin: 0 120px;
+			}
+
+			footer {
+				padding:20px 120px
+			}
+			
+			
+		}
+
+
+		
+	</style>
+</head>
+
+<body>
+	<main >
+		<h1>PFELFPZLE</h1>
+		<br/><br /><br /><br /><br /><br />
+	</main>
+	<header>
+		<a href="/" target="_self">logo</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="#presentation" target="_self">who am i</a>
+				</li>
+				<li>
+					<a href="#projects" target="_self">my projects</a>
+				</li>
+				<li>
+					<a href="#contact" target="_self">contact</a>
+				</li>
+			</ul>
+			<details>
+				<summary ><i class="fa-solid fa-bars"></i></summary>
+				<ul >
+					<li>
+						<a href="#presentation" target="_self">who ami</a>
+					</li>
+					<li>
+						<a href="#projects" target="_self">my projects</a>
+					</li>
+					<li>
+						<a href="#contact" target="_self">contact</a>
+					</li>
+				</ul>
+			</details>
+			
+		</nav>
+	</header>
 	<hr />
-	<address>
-		Written by <a href="mailto:poon.rodolphe@hotmail.fr">Rodolphe Poon</a>.<br>
-		- 2020<br>
-	</address>
-	<a href="#">Back to top</a>
-</footer>
+	<main>
+		<section id="presentation">
+			<h2>Presentation</h2>
+			<details>
+				<summary><b>Who are you?</b></summary>
+				i am Rodolphe Poon
+			</details>
+			<details>
+				<summary><b>Where a you from?</b> </summary>
+				🇫🇷
+			</details>
+			<details>
+				<summary><b>How can i contact you?</b></summary>
+				<a href="mailto:poon.rodolphe@hotmail.fr">📧</a>
+			</details>
+			<i>my resume: </i><a href="/CV%20Rodolphe%20POON%202020.pdf" download>🇫🇷</a>
+			<a href="/CV%20Rodolphe%20POON%202020%20Eng.pdf" download>🇬🇧</a>
+			<hr />
+		</section>
+		<section id="projects">
+			<table>
+				<caption>
+					<h2>My projects</h2>
+				</caption>
+				<thead>
+					<th>Project name</th>
+					<th>Project description</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td> <a href="/test">sapper</a></td>
+						<td>test new js framework</td>
+					</tr>
+					<tr>
+						<td> <a href="/sql-viewer">sql viewer</a></td>
+						<td>test vibe coding with mistral AI</td>
+					</tr>
+					<tr>
+						<td> <a href="/tictactoe"> tictactoe</a></td>
+						<td>tic tac toe coco2d</td>
+					</tr>
+					<tr>
+						<td> <a href="/eskimo"> eskimo</a></td>
+						<td>coco2d game</td>
+					</tr>
+					<tr>
+						<td> <a href="https://github.com/RodolphePoon/octorecipe">octorecipe</a><br /></td>
+						<td>
+							<figure>
+								<img alt="Jian Yang" height="56"
+									src="https://openpsychometrics.org/tests/characters/test-resources/pics/SV/10.jpg" />
+								<figcaption>
+									<p>
+										Question for you. What’s better than a octopus recipe?
+										<br />
+										Answer for you. Eight recipes for octopus.
+										<br />
+										My grandma gave me this recipe, before she died in a horrible way.
+										<br />
+										- Jian Yang
+									</p>
+								</figcaption>
+							</figure>
+						</td>
+					</tr>
+					<tr>
+						<td> <a href="/YOOOOOOOOoooooooooooooo.html"> yoo</a></td>
+						<td>yooo</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</main>
+	<footer id="contact">
+		<hr />
+		<address>
+			Written by <a href="mailto:poon.rodolphe@hotmail.fr">Rodolphe Poon</a>.<br>
+			- 2020<br>
+		</address>
+		<a href="#">Back to top</a>
+	</footer>
+</body>
