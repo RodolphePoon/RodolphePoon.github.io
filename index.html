@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
 	<title>Hello</title>
 	<meta charset="UTF-8">
@@ -13,256 +15,280 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<base href="https://rodolphepoon.github.io/" target="_blank">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	
 	<style>
-		body {
-			margin: 0;
-			display: flex;
-			flex-direction: column;
+
+		html {
+			background-color: black;
+			color:white;
+			font-family:Arial;
+			font-size: 16px;
 		}
 
-		@keyframes example {
-  from {
-		transform: translateY(-180px);
-		opacity: 0;
-	}
-  to {
-		transform: translateY(0);
-		opacity: 1;
-
-	}
-}
-
-		header {
-			display: flex;
-			justify-content: space-between;
-			padding: 20px;
-			border-bottom: 1px dotted red;
-			animation-timing-function: ease-out;
-			animation-name: example;
-			animation-duration: .5s;
-			position: sticky;
-			top:0;
-		}
-
-		header>a {
-			background-color: blue;
-		}
-
-		header>nav{
-			margin-right: 20px;
-			background-color: rgba(255, 255, 255, .7) ;
-			height: 56px;
-			min-width: 56px;
+		body{
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			border-radius:10px;
+			max-width: 1200px;
+			margin:0 auto;
+			height: 100vh;
+		}
+		aside{
+			flex:4;
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		footer{
+			margin-top: auto;
+		}
+		
+
+		main{
+			flex:8;
+			overflow: scroll;
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+		main::-webkit-scrollbar {
+  display: none;
+
+}
+
+		section {
+			margin:40px 0;
+			padding: 0 20px
+		}
+
+
+
+		article{
+			background-color: gray;
+			margin: 10px;
+			padding: 10px;
+			transition: all .2s ease-in-out;
+		}
+
+
+
+		article:hover{
+			transform: scale(1.05) ;
 		}
 
 	
-
-
-		nav>details>summary {
-			display: block;
-			cursor: pointer;
-			padding: 10px;
-		}
-
-		details[open]>ul{
-			animation-timing-function: ease-out;
-			animation-name: example;
-			animation-duration: .5s;
-		}
-
-		
-		nav>details>ul {
-			position: absolute;
-			right: 0;
-			padding:0;
-			margin:0;
-			background-color: white;
-			border:1px solid black;
-		}
-
-		nav>ul {
-			margin:0px;
-			padding:0 20px;
-			display: none;
-			flex-direction: row;
-		}
-
-		nav ul>li{
-			display: block;
-			padding: 10px;
-		}
-
-		main {
-			background-color: green;
-		}
-
-		@media screen and (min-width: 768px) {
-			header {
-				padding:20px 80px
+		@media screen and (max-width:992px) {
+			body{
+			flex-direction: column;
 			}
-			nav>details {
+
+	
+			nav {
 				display: none;
 			}
-			nav>ul {
-				display: flex;
-			}
-			main {
-				margin: 0 80px;
-			}
-			footer {
-				padding:20px 80px
-			}
-		}
 
-		@media screen and (min-width: 1280px) {
-			header {
-				padding:20px 120px
-			}
-			nav>details {
+			.credit {
 				display: none;
 			}
-			nav>ul {
-				display: flex;
+
+			main{
+				overflow: unset;
 			}
 
-			main {
-				margin: 0 120px;
+			h2 {
+				position: sticky;
+				top:0;
+				background-color: black;
+				padding: 20px;
 			}
 
-			footer {
-				padding:20px 120px
-			}
-			
+
 			
 		}
-
-
-		
 	</style>
 </head>
 
 <body>
-	<main >
-		<h1>PFELFPZLE</h1>
-		<br/><br /><br /><br /><br /><br />
-	</main>
-	<header>
-		<a href="/" target="_self">logo</a>
+	<aside>
+		<header>
+<h1>Rodolphe POON</h1>
+		</header>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 		<nav>
 			<ul>
 				<li>
-					<a href="#presentation" target="_self">who am i</a>
+					<a href="#experience" target="_self">working experiences</a>
 				</li>
 				<li>
-					<a href="#projects" target="_self">my projects</a>
+					<a href="#portfolio" target="_self">portfolio</a>
 				</li>
 				<li>
-					<a href="#contact" target="_self">contact</a>
+					<a href="#other" target="_self">other</a>
 				</li>
 			</ul>
-			<details>
-				<summary ><i class="fa-solid fa-bars"></i></summary>
-				<ul >
-					<li>
-						<a href="#presentation" target="_self">who ami</a>
-					</li>
-					<li>
-						<a href="#projects" target="_self">my projects</a>
-					</li>
-					<li>
-						<a href="#contact" target="_self">contact</a>
-					</li>
-				</ul>
-			</details>
-			
 		</nav>
-	</header>
-	<hr />
-	<main>
-		<section id="presentation">
-			<h2>Presentation</h2>
-			<details>
-				<summary><b>Who are you?</b></summary>
-				i am Rodolphe Poon
-			</details>
-			<details>
-				<summary><b>Where a you from?</b> </summary>
-				🇫🇷
-			</details>
-			<details>
-				<summary><b>How can i contact you?</b></summary>
-				<a href="mailto:poon.rodolphe@hotmail.fr">📧</a>
-			</details>
-			<i>my resume: </i><a href="/CV%20Rodolphe%20POON%202020.pdf" download>🇫🇷</a>
-			<a href="/CV%20Rodolphe%20POON%202020%20Eng.pdf" download>🇬🇧</a>
-			<hr />
-		</section>
-		<section id="projects">
-			<table>
-				<caption>
-					<h2>My projects</h2>
-				</caption>
-				<thead>
-					<th>Project name</th>
-					<th>Project description</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td> <a href="/test">sapper</a></td>
-						<td>test new js framework</td>
-					</tr>
-					<tr>
-						<td> <a href="/sql-viewer">sql viewer</a></td>
-						<td>test vibe coding with mistral AI</td>
-					</tr>
-					<tr>
-						<td> <a href="/tictactoe"> tictactoe</a></td>
-						<td>tic tac toe coco2d</td>
-					</tr>
-					<tr>
-						<td> <a href="/eskimo"> eskimo</a></td>
-						<td>coco2d game</td>
-					</tr>
-					<tr>
-						<td> <a href="https://github.com/RodolphePoon/octorecipe">octorecipe</a><br /></td>
-						<td>
-							<figure>
-								<img alt="Jian Yang" height="56"
-									src="https://openpsychometrics.org/tests/characters/test-resources/pics/SV/10.jpg" />
-								<figcaption>
-									<p>
-										Question for you. What’s better than a octopus recipe?
-										<br />
-										Answer for you. Eight recipes for octopus.
-										<br />
-										My grandma gave me this recipe, before she died in a horrible way.
-										<br />
-										- Jian Yang
-									</p>
-								</figcaption>
-							</figure>
-						</td>
-					</tr>
-					<tr>
-						<td> <a href="/YOOOOOOOOoooooooooooooo.html"> yoo</a></td>
-						<td>yooo</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	</main>
-	<footer id="contact">
-		<hr />
-		<address>
-			Written by <a href="mailto:poon.rodolphe@hotmail.fr">Rodolphe Poon</a>.<br>
-			- 2020<br>
-		</address>
-		<a href="#">Back to top</a>
-	</footer>
+		<footer>
+			<a>
+			<i class="fa-brands fa-linkedin-in"></i>
+		</a>
+		<a>
+			<i class="fa-brands fa-github"></i>
+		</a>
+		<a>
+			<i class="fa-brands fa-instagram"></i>
+		</a>
+		<a>
+		<i class="fa-brands fa-dribbble"></i>
+
+		</a>
+
+		<a>
+			<i class="fa-brands fa-weixin"></i>
+		</a>
+
+
+		<a href="mailto:toto@toto.com">
+		<i class="fa-regular fa-envelope"></i>
+		</a>
+<div class="credit">© 2025 - Made in Paris with ♥</div>
+		</footer>
+	</aside>
+<main>
+	<section id="#experience">
+		<h2>
+			Work experience
+		</h2>
+		<h3>Job location duration</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<h3>Job location duration</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis
+				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<h3>Job location duration</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis
+				aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<div>
+				<i>my resume: </i><a href="/CV%20Rodolphe%20POON%202020.pdf" download>🇫🇷</a>
+				<a href="/CV%20Rodolphe%20POON%202020%20Eng.pdf" download>🇬🇧</a>
+			</div>
+	</section>
+	<section id="#portfolio"><h2>
+		Projects
+	</h2>
+	<article>
+		<a href="/eskimo" target="_self" >
+
+		<h3>eskimo</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+		aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	</p>
+</a>
+	</article>
+	<article>
+		<a href="/sql-viewer" target="_self">
+	
+			<h3>sqlite viewer</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</a>
+	</article>
+	<article>
+		<a href="/tictactoe" target="_self" >
+	
+			<h3>tictactoe</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna
+				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</a>
+	</article>
+	</section>
+	<section id="#other">
+		<h2>
+			Other
+		</h2>
+
+		<article>
+			<a href="/" target="_self">
+		
+				<h3>stuff</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</a>
+		</article>
+
+		<article>
+			<a href="/" target="_self">
+		
+				<h3>stuff</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</a>
+		</article>
+
+		<article>
+			<a href="/" target="_self">
+		
+				<h3>stuff</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</a>
+		</article>
+
+		<article>
+			<a href="/" target="_self">
+		
+				<h3>stuff</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</a>
+		</article>
+		
+	</section>
+
+</main>
+
 </body>
+</html>
