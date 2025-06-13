@@ -107,8 +107,9 @@
 			padding: 0 20px
 		}
 
-		img {
-			margin: 15px 0px;
+		.hero {
+			display: block;
+			margin:80px auto;
 		}
 
 		article {
@@ -144,10 +145,6 @@
 		article:hover {
 			transform: scale(1.05);
 			background-color: rgb(54, 54, 54);
-		}
-
-		img {
-			margin-left: 35px;
 		}
 
 		@media screen and (max-width:992px) {
@@ -210,29 +207,20 @@
 			</ol>
 		</nav>
 		<footer>
-			<a>
+			<a href="https://www.linkedin.com/in/wololowololo/">
 				<i class="fa-brands fa-linkedin-in"></i>
 			</a>
-			<a>
+			<a href="https://github.com/RodolphePoon">
 				<i class="fa-brands fa-github"></i>
 			</a>
-			<a>
-				<i class="fa-brands fa-instagram"></i>
-			</a>
-			<a>
-				<i class="fa-brands fa-dribbble"></i>
-			</a>
-			<a>
-				<i class="fa-brands fa-weixin"></i>
-			</a>
-			<a href="mailto:toto@toto.com">
+			<a href="mailto:poon.rodolphe@hotmail.fr">
 				<i class="fa-regular fa-envelope"></i>
 			</a>
 			<div class="credit">© 2025 - Made in Paris with ♥</div>
 		</footer>
 	</aside>
 	<main>
-		<img src="/logo.svg" alt="logo" height="200" width="200" />
+		<img class="hero" src="/logo.svg" alt="logo" height="100" width="100" />
 		<section id="portfolio">
 			<h2>
 				01. Quelques uns de mes projets (plus ou moins aboutis)
@@ -264,7 +252,17 @@
 				<article>
 					<a href="/tictactoe" target="_self">
 						<h3>tictactoe - 2020</h3>
-						<p>Un mini jeux du morpion avec COCOS.JS
+						<p>Un mini-jeux du morpion avec COCOs.JS
+						</p>
+					</a>
+				</article>
+				<article>
+					<a href="https://github.com/RodolphePoon/octorecipe" >
+						<h3>octorecipe - 2018</h3>
+						<p>
+							Une application mobile de 8 recettes de poulpes avec React Native et Expo, 
+							inspiré par Jian Yang de la série Silicon Valley. 
+							TODO: hotdog or not hotdog
 						</p>
 					</a>
 				</article>
@@ -274,17 +272,18 @@
 			<h2>
 				02. Mes dernières expériences professionnelles
 			</h2>
+			<a href="/Rodolphe%20POON%202024%20%28fr%29.pdf" download>Télécharger</a>
 			<article>
 				<details>
 					<summary>
-						<h3>Senior FullStack Developper @ Finfrog - 2022-2025 <address>Paris, France</address>
+						<h3>Développeur FullStack Senior @ Finfrog - 2022-2025 <address>Paris, France</address>
 						</h3>
 						<span>Finfrog est une fintech spécialiste du crédit instantané pour les particuliers.
 							Depuis 2025, il a obtenu le status de Société de Financement</span>
 					</summary>
 					<p>
 						- Refonte graphique de l'espace client, permettant à l'utilisateur de mieux voir l'avancement de son prêt
-						et donc mieux rembourser ses échéances.
+						et donc mieux rembourser ses échéances et réduire les défauts de crédit
 					</p>
 					<p>
 						- Refonte du processus automatique de financement instantanée à 99.9% de réussite.
@@ -299,12 +298,12 @@
 			<article>
 				<details>
 					<summary>
-						<h3>FullStack Developper @ Société Générale - 2020-2022 <address>Fontenay-sous-bois, France</address>
+						<h3>Développeur FullStack @ Société Générale - 2020-2022 <address>Fontenay-sous-bois, France</address>
 						</h3>
 					</summary>
 					<p>
 						- Migration d’une application de gestion de projet depuis AngularJS/Loopback 2 vers ReactJS/NestJS.
-						Migration "iso-prod", fonctionnalité par fonctionnalité.
+						Migration "iso prod", fonctionnalité par fonctionnalité.
 					</p>
 					<p>
 						- Implémentation de fonctionnalité dans un application de gestion des ressources. <br>
@@ -316,7 +315,7 @@
 			<article>
 				<details>
 					<summary>
-						<h3>Front End Developper @ Credit Agricole CACIB - 2019-2020 <address>Montrouge, France</address>
+						<h3>Développeur Front-End @ Credit Agricole CACIB - 2019-2019 <address>Montrouge, France</address>
 						</h3>
 					</summary>
 					<p>
