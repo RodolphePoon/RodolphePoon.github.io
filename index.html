@@ -109,7 +109,7 @@
 
 		.hero {
 			display: block;
-			margin:80px auto;
+			margin: 80px auto;
 		}
 
 		article {
@@ -147,6 +147,30 @@
 			background-color: rgb(54, 54, 54);
 		}
 
+		address {
+			color: rgb(133, 133, 133);
+		}
+
+		q {
+			color: rgb(133, 133, 133);
+		}
+
+		em {
+			color: white;
+			font-size: 1.1em;
+			font-style: normal;
+			font-weight: 700;
+		}
+
+		.mobile-footer {
+			display: none;
+		}
+
+
+		.links i {
+			margin: 10px 3px;
+		}
+
 		@media screen and (max-width:992px) {
 			body {
 				flex-direction: column;
@@ -159,6 +183,13 @@
 			.credit {
 				display: none;
 			}
+
+			.mobile-footer {
+				display: block;
+				text-align: center;
+			}
+
+
 
 			main {
 				overflow: unset;
@@ -191,7 +222,7 @@
 		</header>
 		<br />
 		<q>
-			Fabriquer les nouvelles fonctionnalités qui améliorent l'experience utilisateurs.
+			Fabriquer les nouvelles <em>fonctionnalités</em> qui améliorent <em>l'experience utilisateurs</em>.
 		</q>
 		<nav>
 			<ol>
@@ -207,15 +238,17 @@
 			</ol>
 		</nav>
 		<footer>
-			<a href="https://www.linkedin.com/in/wololowololo/">
-				<i class="fa-brands fa-linkedin-in"></i>
-			</a>
-			<a href="https://github.com/RodolphePoon">
-				<i class="fa-brands fa-github"></i>
-			</a>
-			<a href="mailto:poon.rodolphe@hotmail.fr">
-				<i class="fa-regular fa-envelope"></i>
-			</a>
+			<div class='links'>
+				<a href="https://www.linkedin.com/in/wololowololo/">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+				<a href="https://github.com/RodolphePoon">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a href="mailto:poon.rodolphe@hotmail.fr">
+					<i class="fa-regular fa-envelope"></i>
+				</a>
+			</div>
 			<div class="credit">© 2025 - Made in Paris with ♥</div>
 		</footer>
 	</aside>
@@ -257,11 +290,11 @@
 					</a>
 				</article>
 				<article>
-					<a href="https://github.com/RodolphePoon/octorecipe" >
+					<a href="https://github.com/RodolphePoon/octorecipe">
 						<h3>octorecipe - 2018</h3>
 						<p>
-							Une application mobile de 8 recettes de poulpes avec React Native et Expo, 
-							inspiré par Jian Yang de la série Silicon Valley. 
+							Une application mobile de 8 recettes de poulpes avec React Native et Expo,
+							inspiré par Jian Yang de la série Silicon Valley.
 							TODO: hotdog or not hotdog
 						</p>
 					</a>
@@ -328,7 +361,7 @@
 		</section>
 		<section id="other">
 			<h2>
-				03. Mon fourre-tout.
+				03. Fourre-tout
 			</h2>
 			<div class="grid">
 				<article>
@@ -356,6 +389,9 @@
 					</a>
 				</article>
 			</div>
+		</section>
+		<section class="mobile-footer">
+			© 2025 - Made in Paris with ♥
 		</section>
 	</main>
 </body>
