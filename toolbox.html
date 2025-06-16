@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <title>Toolbox</title>
+  <title>Boite à outil</title>
   <meta charset="UTF-8">
   <meta name="author" content="Rodolphe Poon">
-  <meta name="description" content="Personnal website">
+  <meta name="description" content="Page personnelle ">
   <meta name="robots" content="index,follow">
-  <meta name="keywords" content="Developer, FullStack, Web, Javascript, React, NodeJS, Paris, France">
+  <meta name="keywords" content="Développeur, FullStack, Web, Javascript, React, NodeJS, Paris, France">
   <link rel="icon" type="image/png"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAilBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALCwt1dXXCwsLJycl/f3/o6Ojf39+Pj4+4uLiurq6goKAREREjIyMZGRkwMDBVVVVqampFRUVNTU3////R0dFdXV3zl/MVAAAAF3RSTlMApOTxDkf9s9P3xi0l1wZ2XFCGICFpkwTWJ9YAAAEKSURBVDjLhZPreoMgDIYBz7POzm4L2uK55+7+b2+zCkK04/sX8z4kfkkIUdptaej4fsSCNH4nC8VZEsEkn1EPIW7KwJBDN3p+E/iAFXra82+wIraV+c/V/B/xMdWnY8wXRBI/ga+x/rnpFwQd/mWXjEF+r48YiIYi6RTkomw6TAQucWWH+f5WtrgPxyOeowB+ExV+4ptkMAPwI3JsFwl0AC7igtokoQHAQZxNgjAT4FV5/RcA3pYnA0AlALrmoROoyUHHoui1JrMFAP1+Nj00jJJfT4+2U0bNVouDUn2vlNVqWNe60FRxOSw1buC6tHHLhVnTc2HUysGrlbMurX3t7YdjPz378b4+/1/u+0kzGIRgoAAAAABJRU5ErkJggg==" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" href="https://rodolphepoon.github.io/iconx200.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:url" content="https://rodolphepoon.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rodolphe Poon FullStack Developer">
-  <meta property="og:description" content="Personal website">
+  <meta property="og:title" content="Rodolphe Poon Développeur FullStack">
+  <meta property="og:description" content="Page personnelle">
   <meta property="og:image" content="https://rodolphepoon.github.io/iconx200.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="rodolphepoon.github.io">
   <meta property="twitter:url" content="https://rodolphepoon.github.io/">
-  <meta name="twitter:title" content="Rodolphe Poon FullStack Developer">
-  <meta name="twitter:description" content="Personal website">
+  <meta name="twitter:title" content="Rodolphe Poon Développeur FullStack">
+  <meta name="twitter:description" content="Page personnelle ">
   <meta name="twitter:image" content="https://rodolphepoon.github.io/iconx200.png">
-  <base href="https://rodolphepoon.github.io/en" target="_blank">
+  <base href="https://rodolphepoon.github.io/" target="_blank">
   <style>
+    :root {
+      --white: rgb(255, 255, 255);
+      --black: rgb(0, 0, 0);
+      --darker: rgb(40, 40, 40);
+      --dark: rgb(54, 54, 54);
+      --grey: rgb(133, 133, 133)
+    }
+
     html {
-      background-color: black;
-      color: white;
+      background-color: var(--black);
+      color: var(--white);
       font-family: Arial;
       font-size: 16px;
     }
@@ -50,7 +58,7 @@
 
     h1 {
       overflow: hidden;
-      border-right: 2px solid white;
+      border-right: 2px solid var(--white);
       white-space: nowrap;
       animation: typing 2s steps(13, end) forwards,
         blink-caret 1s step-end infinite;
@@ -76,7 +84,7 @@
       }
 
       50% {
-        border-color: white;
+        border-color: var(--white);
       }
     }
 
@@ -125,7 +133,7 @@
 
     article {
       margin: 5px;
-      background-color: rgb(40, 40, 40);
+      background-color: var(--darker);
       padding: 20px;
       transition: all .2s ease-in-out;
     }
@@ -155,19 +163,19 @@
 
     article:hover {
       transform: scale(1.05);
-      background-color: rgb(54, 54, 54);
+      background-color: var(--dark);
     }
 
     address {
-      color: rgb(133, 133, 133);
+      color: var(--grey);
     }
 
     q {
-      color: rgb(133, 133, 133);
+      color: var(--grey)
     }
 
     em {
-      color: white;
+      color: var(--white);
       font-size: 1.1em;
       font-style: normal;
       font-weight: 700;
@@ -209,17 +217,13 @@
       h2 {
         position: sticky;
         top: 0;
-        background-color: black;
+        background-color: var(--black);
         padding: 20px;
-      }
-      .grid {
-        margin: 0;
       }
     }
 
     .grid {
       display: grid;
-      margin: 0 20px;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       grid-auto-rows: 1fr;
     }

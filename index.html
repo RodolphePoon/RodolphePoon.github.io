@@ -27,9 +27,17 @@
 	<meta name="twitter:image" content="https://rodolphepoon.github.io/iconx200.png">
 	<base href="https://rodolphepoon.github.io/" target="_blank">
 	<style>
+		:root {
+			--white: rgb(255, 255, 255);
+			--black: rgb(0, 0, 0);
+			--darker: rgb(40, 40, 40);
+			--dark: rgb(54, 54, 54);
+			--grey: rgb(133, 133, 133)
+		}
+
 		html {
-			background-color: black;
-			color: white;
+			background-color: var(--black);
+			color: var(--white);
 			font-family: Arial;
 			font-size: 16px;
 		}
@@ -51,7 +59,7 @@
 
 		h1 {
 			overflow: hidden;
-			border-right: 2px solid white;
+			border-right: 2px solid var(--white);
 			white-space: nowrap;
 			animation: typing 2s steps(13, end) forwards,
 				blink-caret 1s step-end infinite;
@@ -77,7 +85,7 @@
 			}
 
 			50% {
-				border-color: white;
+				border-color: var(--white);
 			}
 		}
 
@@ -126,7 +134,7 @@
 
 		article {
 			margin: 5px;
-			background-color: rgb(40, 40, 40);
+			background-color: var(--darker);
 			padding: 20px;
 			transition: all .2s ease-in-out;
 		}
@@ -156,19 +164,19 @@
 
 		article:hover {
 			transform: scale(1.05);
-			background-color: rgb(54, 54, 54);
+			background-color: var(--dark);
 		}
 
 		address {
-			color: rgb(133, 133, 133);
+			color: var(--grey);
 		}
 
 		q {
-			color: rgb(133, 133, 133);
+			color: var(--grey)
 		}
 
 		em {
-			color: white;
+			color: var(--white);
 			font-size: 1.1em;
 			font-style: normal;
 			font-weight: 700;
@@ -201,8 +209,6 @@
 				text-align: center;
 			}
 
-
-
 			main {
 				overflow: unset;
 			}
@@ -210,7 +216,7 @@
 			h2 {
 				position: sticky;
 				top: 0;
-				background-color: black;
+				background-color: var(--black);
 				padding: 20px;
 			}
 		}

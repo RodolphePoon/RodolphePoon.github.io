@@ -26,13 +26,21 @@
   <meta name="twitter:image" content="https://rodolphepoon.github.io/iconx200.png">
   <base href="https://rodolphepoon.github.io/en" target="_blank">
   <style>
+    :root {
+      --white: rgb(255, 255, 255);
+      --black: rgb(0, 0, 0);
+      --darker: rgb(40, 40, 40);
+      --dark: rgb(54, 54, 54);
+      --grey: rgb(133, 133, 133)
+    }
+  
     html {
-      background-color: black;
-      color: white;
+      background-color: var(--black);
+      color: var(--white);
       font-family: Arial;
       font-size: 16px;
     }
-
+  
     body {
       display: flex;
       flex-direction: row;
@@ -40,55 +48,55 @@
       margin: 0 auto;
       height: 100vh;
     }
-
+  
     aside {
       flex: 4;
       display: flex;
       flex-direction: column;
       padding: 20px;
     }
-
+  
     h1 {
       overflow: hidden;
-      border-right: 2px solid white;
+      border-right: 2px solid var(--white);
       white-space: nowrap;
       animation: typing 2s steps(13, end) forwards,
         blink-caret 1s step-end infinite;
       font-size: 1.6rem;
     }
-
+  
     @keyframes typing {
       from {
         width: 0
       }
-
+  
       to {
         width: 100%
       }
     }
-
+  
     /* The typewriter cursor effect */
     @keyframes blink-caret {
-
+  
       from,
       to {
         border-color: transparent
       }
-
+  
       50% {
-        border-color: white;
+        border-color: var(--white);
       }
     }
-
+  
     a {
       color: inherit;
       text-decoration: none;
     }
-
+  
     footer {
       margin-top: auto;
     }
-
+  
     main {
       scroll-behavior: smooth;
       overflow-y: auto;
@@ -98,42 +106,42 @@
       scrollbar-width: none;
       /* Firefox */
     }
-
+  
     /* Hide scrollbar for Chrome, Safari and Opera */
     main::-webkit-scrollbar {
       display: none;
     }
-
+  
     ol>li {
       list-style: decimal-leading-zero;
       padding: 5px 0px;
-
+  
       &:focus {
         color: red;
       }
     }
-
+  
     section {
       margin: 40px 0;
       padding: 0 20px
     }
-
+  
     .hero {
       display: block;
       margin: 80px auto;
     }
-
+  
     article {
       margin: 5px;
-      background-color: rgb(40, 40, 40);
+      background-color: var(--darker);
       padding: 20px;
       transition: all .2s ease-in-out;
     }
-
+  
     details {
       cursor: pointer;
       interpolate-size: allow-keywords;
-
+  
       &::details-content {
         transition:
           block-size 1s,
@@ -142,78 +150,78 @@
         block-size: 0;
         /* Or also:  height:0; */
       }
-
+  
       &[open]::details-content {
         block-size: auto;
         /* Or also:  height:auto; */
       }
-
+  
       >summary {
         list-style: none;
       }
     }
-
+  
     article:hover {
       transform: scale(1.05);
-      background-color: rgb(54, 54, 54);
+      background-color: var(--dark);
     }
-
+  
     address {
-      color: rgb(133, 133, 133);
+      color: var(--grey);
     }
-
+  
     q {
-      color: rgb(133, 133, 133);
+      color: var(--grey)
     }
-
+  
     em {
-      color: white;
+      color: var(--white);
       font-size: 1.1em;
       font-style: normal;
       font-weight: 700;
     }
-
+  
     .mobile-footer {
       display: none;
     }
-
-
+  
+  
     .links i {
       margin: 10px 3px;
     }
-
+  
     @media screen and (max-width:992px) {
       body {
         flex-direction: column;
       }
-
+  
       nav {
         display: none;
       }
-
+  
       .credit {
         display: none;
       }
-
+  
       .mobile-footer {
         display: block;
         text-align: center;
       }
-
-
-
+  
+  
+  
       main {
         overflow: unset;
       }
-
+  
       h2 {
         position: sticky;
         top: 0;
-        background-color: black;
+        background-color: var(--black);
         padding: 20px;
       }
     }
-
+  
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
